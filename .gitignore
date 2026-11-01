@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+
+# Environment variables and secrets
+.env
+.streamlit/secrets.toml
+
+# Editor settings
+.vscode/

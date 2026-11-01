@@ -2,13 +2,13 @@
 
 An interactive Python web application that analyzes a candidate's resume against a job description to identify matching skills, highlight skill gaps, and calculate a compatibility score.
 
-Built using **Streamlit, Regular Expressions (Regex), Python Set Operations, and Matplotlib**, this project demonstrates how text processing can simplify initial resume screening.
+Built using **Python, Streamlit, Regex, Set Operations, and Matplotlib**, this project demonstrates how text processing can simplify initial resume screening.
 
 ## ✨ Features
 
 - 📊 **Match Score:** Calculates the percentage of required job skills found in the resume.
 - ✅ **Matched Skills:** Identifies skills present in both the resume and job description.
-- ❌ **Missing Skills:** Highlights required skills that are not detected in the resume.
+- ❌ **Missing Skills:** Highlights required skills not detected in the resume.
 - 📈 **Visual Analytics:** Displays a bar chart comparing matched and missing skills.
 - 📝 **Interactive Interface:** Enter or edit resume and job description text directly in the application.
 - 🔍 **Regex-Based Extraction:** Detects predefined skills using pattern matching and word boundaries.
@@ -17,7 +17,7 @@ Built using **Streamlit, Regular Expressions (Regex), Python Set Operations, and
 
 - **Python** — Core programming logic
 - **Streamlit** — Interactive web interface
-- **Regular Expressions (Regex)** — Skill extraction from text
+- **Regular Expressions (Regex)** — Skill extraction
 - **Set Operations** — Skill comparison and matching
 - **Matplotlib** — Data visualization
 
@@ -25,9 +25,9 @@ Built using **Streamlit, Regular Expressions (Regex), Python Set Operations, and
 
 1. Enter the candidate's resume and the target job description.
 2. The application extracts recognized skills from both texts.
-3. Python set operations identify matching and missing skills.
-4. A match percentage is calculated based on the skills required by the job description.
-5. Results are displayed through metrics, skill lists, a progress bar, and a bar chart.
+3. Set operations identify matching and missing skills.
+4. The application calculates a match percentage based on the required job skills.
+5. Results appear through metrics, skill lists, a progress bar, and a bar chart.
 
 **Match Score Formula:**
 
@@ -37,35 +37,38 @@ Built using **Streamlit, Regular Expressions (Regex), Python Set Operations, and
 
 ### Prerequisites
 
-Install Python 3.9 or later and ensure that `pip` is available.
+- Python 3.9 or later
+- Git
 
 ### Installation
 
 **1. Clone the repository**
 
+Replace `YOUR-USERNAME` with your GitHub username.
+
 ```bash
 git clone https://github.com/YOUR-USERNAME/Resume-Skill-Matcher.git
 ```
 
-**2. Navigate to the project folder**
+**2. Navigate to the project directory**
 
 ```bash
 cd Resume-Skill-Matcher
 ```
 
-**3. Install the required libraries**
+**3. Install the dependencies**
 
 ```bash
-pip install streamlit matplotlib
+pip install -r requirements.txt
 ```
 
 **4. Run the application**
 
-Replace `app.py` with your Python filename if it is different.
-
 ```bash
 streamlit run app.py
 ```
+
+Replace `app.py` with your actual Python filename if it is different.
 
 The application will open in your default browser.
 
@@ -74,27 +77,28 @@ The application will open in your default browser.
 ```text
 Resume-Skill-Matcher/
 │
-├── app.py          # Main application
-├── README.md       # Project documentation
-└── .gitignore      # Git ignore rules
+├── app.py              # Main Python application
+├── requirements.txt    # Required Python libraries
+├── README.md           # Project documentation
+└── .gitignore          # Excludes unnecessary and sensitive files
 ```
 
 ## 🎯 Project Objective
 
-This project demonstrates the practical application of **text processing, algorithmic logic, set theory, and data visualization** in resume analysis and skill-gap identification.
+The objective is to demonstrate the practical application of **text processing, regular expressions, Python set operations, and data visualization** in resume analysis and skill-gap identification.
 
-It can help candidates understand which required skills are detected in their resumes and which skills may need further development.
+The application can help candidates identify which required skills are detected in their resumes and which skills may need further development.
 
 ## ⚠️ Limitations
 
 - Uses a predefined skill database rather than a trained AI/ML model.
-- Detects only the skills included in its predefined skill bank.
-- The match score measures skill overlap, not a candidate's overall suitability for a role.
+- Detects only skills included in its predefined skill bank.
+- The match score measures skill overlap, not overall candidate suitability.
+- Does not understand context or evaluate a candidate's actual proficiency.
 
 ## 👨‍💻 Author
 
-**Manish Kumar Singh**
-
+**Manish Kumar Singh**  
 MCA (AI & ML) Student | Chandigarh University
 
 ---
